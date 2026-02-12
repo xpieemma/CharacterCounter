@@ -17,18 +17,36 @@ An interactive character counter application that demonstrates state management 
 * Vite 
 
 ## Installation & Setup 
-1. **Clone the repository**
-    ``` Bash 
-  cd character-counter
-2. **Install dependencies:**
-    ``` Bash
-       npm install
-3. **Start the development server:**
-    ``` Bash
-      npm run dev
-4. **Open in Browser:** 
-    Navigate to the URL shown in the terminal 
 
+1. **Fork the Repository**
+   Click the **Fork** button in the top-right corner of this page to create a copy of this repository in your own GitHub account.
+
+
+2. **Clone your Fork**
+
+  bash 
+  git clone https://github.com/YOUR-USERNAME/character-counter.git
+
+2. **Install dependencies:**
+
+  bash
+  cd character-counter 
+  or 
+  ls 
+  then 
+  cd theFolderName
+  + 
+  npm ci
+
+
+3. **Start the development server:**
+
+    bash
+    npm run dev
+
+4. **Open in Browser:** 
+
+    Navigate to the URL shown in the terminal 
     ```
     http: //localhost: 5173
 

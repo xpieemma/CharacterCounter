@@ -18,38 +18,32 @@ An interactive character counter application that demonstrates state management 
 
 ## Installation & Setup 
 
-1. **Fork the Repository**
+1. **Fork the Repository**  ...
+
    Click the **Fork** button in the top-right corner of this page to create a copy of this repository in your own GitHub account.
 
 
 2. **Clone your Fork**
 
-  bash 
+  ```bash 
   git clone https://github.com/YOUR-USERNAME/character-counter.git
 
-2. **Install dependencies:**
+3. **Install dependencies:**
 
-  bash
-  cd character-counter 
-  or 
-  ls 
-  then 
-  cd theFolderName
-  + 
-  npm ci
+  Bash
+cd character-counter
+npm ci
 
+4. **Start the development server:**
 
-3. **Start the development server:**
-
-    bash
+  Bash
     npm run dev
 
-4. **Open in Browser:** 
+5. **Open in Browser:** 
 
     Navigate to the URL shown in the terminal 
-    ```
+    ```Plaintext
     http: //localhost: 5173
-
 
 ## 📂 Project Structure
 

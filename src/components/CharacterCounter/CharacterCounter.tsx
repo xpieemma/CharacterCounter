@@ -48,7 +48,14 @@ showReadingTime ={true}/>
 
 <span> Target : {minWords} - {maxWords}</span>
 
-{overTheLimit ? " It is exceed the limit": " within the limits"}
+<p style={{color: overTheLimit ? "red" : "green"}}> 
+    {overTheLimit ? " It is exceed the limit": " within the limits"} </p>
+
+    <div>
+        <p>Characters: {textStats.characterCount}</p>
+<p>Words: {textStats.wordCount}</p>
+<p>Reading Time: {textStats.readingTime} min</p>
+    </div>
 </div>
     );
 }

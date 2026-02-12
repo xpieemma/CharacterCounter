@@ -38,8 +38,9 @@ npm ci
 
 4. **Start the development server:**
 
-  Bash
+ ```bash Bash
     npm run dev
+    ```
 
 5. **Open in Browser:** 
 

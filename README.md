@@ -18,13 +18,13 @@ An interactive character counter application that demonstrates state management 
 
 ## Installation & Setup 
 1. **Clone the repository**
-    ```Bash 
+    ``` Bash 
   cd character-counter
 2. **Install dependencies:**
-       ```Bash
+    ``` Bash
        npm install
 3. **Start the development server:**
-      ```Bash
+    ``` Bash
       npm run dev
 4. **Open in Browser:** 
     Navigate to the URL shown in the terminal 

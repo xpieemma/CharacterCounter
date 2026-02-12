@@ -38,7 +38,7 @@ npm ci
 
 4. **Start the development server:**
 
- ```bash Bash
+ ```bash 
     npm run dev
     ```
 

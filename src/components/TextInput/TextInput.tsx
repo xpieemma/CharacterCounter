@@ -1,17 +1,5 @@
 // import React from "react";
 import type {TextInputProps} from '../../types';
-// function TextInput() {
-
-//     const textInput 
-
-//     return (
-//         <div>
-
-//         </div>
-//     );
-// }
-
-// export default TextInput;
 
 export const TextInput: React.FC<TextInputProps> = ({
   onTextChange,
@@ -25,7 +13,7 @@ export const TextInput: React.FC<TextInputProps> = ({
         placeholder={placeholder}
         defaultValue={initialValue}
         onChange={(e) => onTextChange(e.target.value)}
-        rows={6}
+        rows={8}
       />
     </div>
   );

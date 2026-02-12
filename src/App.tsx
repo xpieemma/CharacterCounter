@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <CharacterCounter minWords={0} maxWords={10} />
+    <CharacterCounter minWords={25} maxWords={100} />
     </>
   )
 }

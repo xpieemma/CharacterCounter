@@ -4,18 +4,18 @@ import { TextInput } from "../TextInput/TextInput";
 import { StatsDisplay } from "../StatsDisplay/StatsDisplay";
 
 
-function CharacterCounter({minWords = 0,maxWords=10}:CharacterCounterProps){
+function CharacterCounter({minWords = 25,maxWords=100}:CharacterCounterProps){
   
     const [text, setText ]= useState('');
 
     const calculateStats = (aString : string): TextStats => {
              const strLength = aString.length;
-
-            //  if empty (zero) if not split with " "...  
+ 
              const countingWord = aString.trim() === "" ? 0 : aString.trim().split(/\s+/).length; 
 
-             const readingTime = Math.ceil(countingWord/200) ; // how long it takes to read the txt
-
+             const readingTimeMinutes = Math.floor(countingWord/200) ; 
+             const readingTimeSeconds = Math.ceil((countingWord/200 - readingTimeMinutes)*60);
+             const readingTime = `${readingTimeMinutes}: ${readingTimeSeconds.toString().padStart(2, "0")}`;
              return {
                 characterCount : strLength, 
                 wordCount: countingWord,

@@ -27,12 +27,14 @@ An interactive character counter application that demonstrates state management 
 
   ```bash 
   git clone https://github.com/YOUR-USERNAME/character-counter.git
+  ```
 
 3. **Install dependencies:**
 
-  Bash
+  ```bash
 cd character-counter
 npm ci
+```
 
 4. **Start the development server:**
 

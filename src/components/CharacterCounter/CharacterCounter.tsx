@@ -10,12 +10,16 @@ function CharacterCounter({minWords = 25,maxWords=100}:CharacterCounterProps){
 
     const calculateStats = (aString : string): TextStats => {
              const strLength = aString.length;
- 
+            
+  
              const countingWord = aString.trim() === "" ? 0 : aString.trim().split(/\s+/).length; 
 
-             const readingTimeMinutes = Math.floor(countingWord/200) ; 
-             const readingTimeSeconds = Math.ceil((countingWord/200 - readingTimeMinutes)*60);
-             const readingTime = `${readingTimeMinutes}: ${readingTimeSeconds.toString().padStart(2, "0")}`;
+            //  const readingTimeMinutes = Math.floor((Math.ceil(countingWord/3)/60));
+            // const readingSeconds = Math.ceil(countingWord / 3 - readingTimeMinutes * 60);
+            //
+              const readingTimeMinutes = Math.floor(countingWord/200) ; 
+              const readingTimeSeconds = Math.ceil((countingWord/200 - readingTimeMinutes)*60);
+              const readingTime = `${readingTimeMinutes}: ${readingTimeSeconds.toString().padStart(2, "0")}`;
              return {
                 characterCount : strLength, 
                 wordCount: countingWord,

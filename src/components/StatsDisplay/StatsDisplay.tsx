@@ -27,7 +27,7 @@ export const StatsDisplay: React.FC<StatsDisplayProps & CharacterCounterProps> =
      Words
 
 </h4>
-<p>{wordCount}</p>
+<p className="text-red-600">{wordCount}</p>
 <span>Min:{minWords} | Max: {maxWords}</span>
 
  
